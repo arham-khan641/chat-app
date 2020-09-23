@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    
+     
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script> 
+    <!-- firbase with database  -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script> 
+
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyDcDzRl3J59k7G3f7-5D8DH9rhvUk__5BY",
+          authDomain: "social-auth-861ea.firebaseapp.com",
+          databaseURL: "https://social-auth-861ea.firebaseio.com",
+          projectId: "social-auth-861ea",
+          storageBucket: "social-auth-861ea.appspot.com",
+          messagingSenderId: "867547973864",
+          appId: "1:867547973864:web:ffbbdb2a41574912d2215d",
+          measurementId: "G-6FZV821TPD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+      </script>
+</head>
+<body>
+  <navbar> <img  class="nav" src="images.jpg" alt=""> <h1>Lets Chat..</h1></navbar>
+   
+  <button onclick="Facebook_login()">FACEBOOK login</button>  
+  
+  
+  <!-- <div class="form">
+    <input type="email" id="email">
+    <br>
+    <input type="password" id="password">
+    <br>
+       <button onclick="Signup()">Signup</button>
+
+   </div>
+   <br/>
+
+   <div class="form">
+     <input type="email" id="login-email">
+     <br>
+     <input type="password" id="login-password">
+     <br>
+        <button onclick="Login()">Login</button>
+    </div> -->
+
+     
+
+        
+     
+  
+      <div class="Container-message">
+        
+        <ul id="messages"></ul>
+      <!-- create a list -->
+     
+</div>
+<div>
+  <form  class="message" onsubmit="return sendMessage();"> 
+    
+    
+    <input id="message" required  placeholder="Enter message "autocomplete="off">
+  <button type="submit">Send</button>
+
+</form>
+</div>
+
+  
+    <script src="myApp.js"></script>
+     
+</body>
+</html>
